@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تماس با ما | Baby Land</title>
+
+<link rel="stylesheet" href="style.css">
+	</head>
+
+<body>
+
+<section class="contact">
+
+<h1>📞 تماس با Baby Land</h1>
+
+<form onsubmit="sendMessage();return false;">
+
+<input type="text" placeholder="نام و نام خانوادگی" required>
+
+<input type="email" placeholder="ایمیل" required>
+
+<input type="text" placeholder="شماره موبایل" required>
+
+<textarea placeholder="پیام خود را بنویسید..." required></textarea>
+
+<button type="submit">ارسال پیام</button>
+
+</form>
+
+<div id="success">
+✅ پیام شما با موفقیت ارسال شد.
+<br>
+در سریع‌ترین زمان ممکن با شما تماس خواهیم گرفت.
+</div>
+
+<div class="info">
+    <p>📍 تهران، خیابان ولیعصر، پلاک ۱۲۳</p>
+    <p>📞 0912-000-0000</p>
+    <p>✉ info@babyland.com</p>
+</div>
+
+</section>
+
+<script>
+function sendMessage(){
+document.getElementById("success").style.display="block";
+document.querySelector("form").reset();
+}
+</script>
+<div style="text-align:center; margin:40px;">
+
+<a href="Baby-land.html" class="btn">
+
+بازگشت به صفحه اصلی
+
+</a>
+
+</div>
+</body>
+
+</html>
+
+
